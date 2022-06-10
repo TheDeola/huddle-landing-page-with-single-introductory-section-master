@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+main {
+    padding: 0 100px;
+    padding-top: 30px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+}
+.logo img[src]{
+    width: 150px;
+    margin-bottom: 100px;
+}
+.banner {
+    display: flex;
+}
+.banner h1 {
+    font-size: 40px;
+}
+.build {
+    margin: 15px 30px;
+    text-align: left;
+}
+button a {
+    text-decoration: none;
+}
+.register a:hover {
+    color: white;
+}
+.register:hover {
+    background-color: hsl(300, 69%, 71%);
+}
+.register {
+    border: 1px solid white;
+    border-radius: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: hsl(257, 40%, 49%);
+}
+.socials {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+.socials img[src]{
+    background-color:  hsl(257, 40%, 49%);
+    width: 50px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 50%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(300, 69%, 71%);
+}
+
+/* Responsiveness Starts Here */
+
+@media (max-width: 768px) {
+    main {
+        margin: auto;
+        padding: 20px;
+        width: 400px;
+        height: auto;
+        text-align: center;
+        background-image: url(/images/bg-mobile.svg);
+        background-position:top;
+    }
+    .logo {
+        text-align: left;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner img[src] {
+        max-width: 360px;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .build {
+        text-align: center;
+    }
+    button a {
+        text-decoration: none;
+    }
+    .register a:hover {
+        color: white;
+    }
+    .register:hover {
+        background-color: hsl(300, 69%, 71%);
+    }
+    .register {
+        border: 1px solid white;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 50px;
+        color: hsl(257, 40%, 49%);
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+    }
+}
